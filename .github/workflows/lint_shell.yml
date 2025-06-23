@@ -1,0 +1,23 @@
+name: Lint Shell scripts
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '**/*.sh'
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-shell:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      
+      - name: Lint Shell scripts with ShellCheck
+        uses: ludeeus/action-shellcheck@master

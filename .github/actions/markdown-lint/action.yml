@@ -1,0 +1,18 @@
+name: "Markdown Linter"
+description: "Lint all Markdown files using proselint"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set up Python (for proselint)
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.x
+
+    - name: Install proselint
+      run: pip install --upgrade proselint
+      shell: bash
+
+    - name: Run linter
+      run: bash "${{ github.action_path }}/lint.sh"
+      shell: bash

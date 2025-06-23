@@ -1,0 +1,25 @@
+services:
+  ssh-server:
+    build:
+      context: .
+      args:
+        USERNAME: "server"
+        PASSWORD: "server-p@ss123"
+    container_name: ssh-server
+    networks:
+      - ssh-net
+
+  ssh-client:
+    build:
+      context: .
+      args:
+        USERNAME: "client"
+        PASSWORD: "client-p@ss123"
+    container_name: ssh-client
+    depends_on:
+      - ssh-server
+    networks:
+      - ssh-net
+
+networks:
+  ssh-net:

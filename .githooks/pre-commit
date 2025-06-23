@@ -1,0 +1,9 @@
+#!/bin/bash
+cd code/part5 || exit 1
+echo "Running make paper.pdf..."
+if ! make paper.pdf; then
+  echo "ERROR: Failed to build paper.pdf. Commit aborted."
+  exit 1
+fi
+
+make clean
