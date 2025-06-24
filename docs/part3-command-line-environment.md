@@ -26,7 +26,7 @@ The resulting config file
 
 ![SSH config file](../assets/part3/2.png)
 
-### 6. Install `mosh` in the VM and establish a connection. Then disconnect the network adapter of the server/VM. Can mosh properly recover from it?
+### 6. Install `mosh` in the VM and establish a connection. Then disconnect the network adapter of the server/VM. Can `mosh` properly recover from it?
 
 - Install mosh on both the client and server
 
@@ -50,6 +50,7 @@ docker network disconnect part3_ssh-net ssh-server
 ```
 
 - Observe in the client terminal the SSH session is not terminated
+
 ![Mosh session](../assets/part3/6.1.png)
 
 - Reconnect server to the network
@@ -58,6 +59,7 @@ docker network connect part3_ssh-net ssh-server
 ```
 
 - `mosh` correctly recover from the disconnect
+
 ![Mosh recover](../assets/part3/6.2.png)
 
 ### 7. Look into what the `-N` and `-f` flags do in ssh and figure out a command to achieve background port forwarding.
