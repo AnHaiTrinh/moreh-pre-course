@@ -57,7 +57,11 @@ Trying to rename `data.dat` to `data2.dat` and make a commit would result in a r
 
 Visit the page at [this link](https://anhaitrinh.github.io/moreh-pre-course/).
 
-[This action](../.github/workflows/lint_shell.yml) run shellcheck to all shell files in the repo
+[This action](../.github/workflows/lint_shell.yml) run shellcheck to all shell files in the repo.
+
+When a bad shell script is added, this action would fail
+
+![Shellcheck action fail](../assets/part5/4.png)
 
 ### 5. Build your own GitHub action to run `proselint` or `write-good` on all the `.md` files in the repository. Enable it in your repository, and check that it works by filing a pull request with a typo in it
 
@@ -67,4 +71,4 @@ This action is used to spell check this repo in [this workflow](../.github/workf
 
 When an invalid markdown file is added, this action would fail
 
-![Markdown lint action Fail](../assets/part5/5.png)
+![Markdown lint action fail](../assets/part5/5.png)
