@@ -174,7 +174,7 @@ Insertion Sort:
 **Conclusion:**
 - Quicksort uses the most memory due to allocating new arrays (`left`, `right` and the returning array)
 - Quicksort inplace uses less memory than Quicksort, but still has significant overhead (`0.1 MiB`). This is probably due to the recursive implementation of this function, which grows the call stack hence increases memory usage.
-- Insertion Sort does not comsume extra memory because it does not allocate new objects and uses an iterative approach.
+- Insertion Sort does not consume extra memory because it does not allocate new objects and uses an iterative approach.
 
 #### 3. Profiling with `perf`
 
