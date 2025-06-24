@@ -3,10 +3,12 @@ set -e
 
 EXIT_CODE=0
 
-for file in $(find . -type f -name "*.md"); do
+find . -type f -name "*.md" | while IFS= read -r file; do
     echo "--------------------------------"
     echo "Checking: $file"
-    proselint "$file" || EXIT_CODE=1
+    if ! proselint "$file"; then
+        EXIT_CODE=1
+    fi
 done
 
-exit $EXIT_CODE
+exit "$EXIT_CODE"

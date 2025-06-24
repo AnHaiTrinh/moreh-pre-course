@@ -1,0 +1,7 @@
+{
+    "disable": [
+        "leonard.exclamation.30ppm",
+        "typography.symbols.curly_quotes",
+        "typography.symbols.multiplication_symbol"
+    ]
+}
