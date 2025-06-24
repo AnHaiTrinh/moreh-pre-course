@@ -1,5 +1,3 @@
-# Welcome
-
 Check out my solutions for Moreh's pre course on this website deployed with Github Pages:
 
 - [Part 1: Course overview + the shell](docs/part1-course-overview-plus-the-shell.md)
