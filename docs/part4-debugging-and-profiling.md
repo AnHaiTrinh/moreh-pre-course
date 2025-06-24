@@ -125,6 +125,8 @@ python -m cProfile -s tottime sorts.py
 kernprof -l -v sorts_cpu_line_profile.py
 ```
 
+**Results:**
+
 Insertion Sort:
 
 ![Insertion Sort result](../assets/part4/5_cpu_insertionsort.png)
@@ -155,7 +157,7 @@ To run the script:
 python -m memory_profiler sorts_mem_profiler.py
 ```
 
-Results:
+**Results:**
 
 Quicksort:
 
