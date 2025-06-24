@@ -35,7 +35,7 @@ ssh server@ssh-server
 
 ### Connect/Disconnect container from network
 
-Docker Compose create a network `part3_ssh-net` for the SSH client and SSH server. If you want to connect/disconnect a machine from this netowork, run the following commands
+Docker Compose automatically creates a network `part3_ssh-net` for the SSH client and SSH server. If you want to connect/disconnect a machine from this netowork, run the following commands
 
 ```bash
 docker network (dis)connect part3_ssh-net ssh-{client|server}
