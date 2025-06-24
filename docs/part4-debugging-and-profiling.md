@@ -210,7 +210,7 @@ Quicksort inplace:
 
 Based on the resulting image, `fib0` is called 21 times.
 
-!![`pycallgraph_memoize.png`](../assets/part4/6_pycallgraph_memoize.png)
+![`pycallgraph_memoize.png`](../assets/part4/6_pycallgraph_memoize.png)
 
 When using memoization, each `fibN` function is only called once because they have been cached.
 

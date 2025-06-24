@@ -9,8 +9,7 @@ STDOUT_FILENAME=$1
 STDERR_FILENAME=$2
 count=0
 while true; do
-    ./error.sh >> $STDOUT_FILENAME 2>> $STDERR_FILENAME
-    if [[ $? -ne 0 ]]; then
+    if ! ./error.sh >> "$STDOUT_FILENAME" 2>> "$STDERR_FILENAME"; then
         echo "Command failed after $count run(s)."
         break
     fi

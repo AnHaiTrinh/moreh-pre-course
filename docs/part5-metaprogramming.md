@@ -55,7 +55,7 @@ Trying to rename `data.dat` to `data2.dat` and make a commit would result in a r
 
 ### 4. Set up a simple auto-published page using `GitHub Pages`. Add a `GitHub Action` to the repository to run `shellcheck` on any shell files in that repository (here is one way to do it). Check that it works!
 
-Visit the page at [this link](http://AnHaiTrinh.github.io/moreh-pre-course).
+Visit the page at [this link](https://anhaitrinh.github.io/moreh-pre-course/).
 
 [This action](../.github/workflows/lint_shell.yml) run shellcheck to all shell files in the repo
 

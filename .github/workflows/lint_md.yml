@@ -20,4 +20,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Lint Markdown
-        uses: ./github/actions/markdown-lint
+        uses: ./.github/actions/markdown-lint
