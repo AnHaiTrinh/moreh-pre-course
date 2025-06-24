@@ -104,7 +104,7 @@ rr replay
 
 ![`rr` Replay](../assets/part4/4_rr_replay.png)
 
-4. Observer that the result is the same as the recording
+4. Observe that the result is the same as the recording
 
 ![`rr` Replay Result](../assets/part4/4_rr_replay_result.png)
 
