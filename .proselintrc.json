@@ -1,8 +1,7 @@
 {
   "checks": {
     "lexical_illusions.misc": false,
-    "leonard.exclamation.30ppm": false,
-    "typography.symbols.curly_quotes": false,
-    "typography.symbols.multiplication_symbol": false
+    "typography.exclamation": false,
+    "typography.symbols": false
   }
 }
