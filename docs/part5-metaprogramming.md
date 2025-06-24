@@ -64,3 +64,7 @@ Visit the page at [this link](https://anhaitrinh.github.io/moreh-pre-course/).
 See [here](../.github/actions/markdown-lint/) for a custom Github action using `proselint`
 
 This action is used to spell check this repo in [this workflow](../.github/workflows/lint_md.yml)
+
+When an invalid markdown file is added, this action would fail
+
+![Markdown lint action Fail](../assets/part5/5.png)
